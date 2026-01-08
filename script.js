@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Get all resume download links
+  
     const resumeLinks = document.querySelectorAll('a[download]');
     let hideTimeout;
 
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             console.log(`Resume downloaded: ${this.href}`);
 
-            // Google Analytics event
+    
             if (typeof gtag === 'function') {
                 gtag('event', 'resume_download', {
                     event_category: 'engagement',
@@ -45,7 +45,33 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 3000);
     }
 
-    // Update current date in footer
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+    document.querySelectorAll('.project-links a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const projectName = this.closest('.project-card').querySelector('h3').textContent;
+            gtag('event', 'project_click', {
+                'project_name': projectName,
+                'link_type': this.classList.contains('btn-primary') ? 'case_study' : 'github',
+                'event_category': 'Project Engagement'
+            });
+        });
+    });
+    
+    // Track time spent on project pages
+    let timeSpent = 0;
+    setInterval(() => {
+        timeSpent += 5;
+        if (timeSpent % 30 === 0) { 
+            gtag('event', 'time_spent', {
+                'page_title': document.title,
+                'time_seconds': timeSpent,
+                'event_category': 'Engagement'
+            });
+        }
+    }, 5000);
+});
     const currentDate = new Date().toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
