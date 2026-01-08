@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics Portfolio | KINGSLEY OKORONKWO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+</head>
+<body>
+  
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">📊 <span>DataPortfolio</span><span>OKORONKWO_KINGSLEY<span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+  
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Data Analytics & Visualization Portfolio</h1>
+                <p class="hero-subtitle">Transforming raw data into actionable insights using Python, SQL, and modern analytics tools</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Visualizations</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Python</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-down"></i></a>
+                    <a href="https://github.com/spacepriest8" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="chart-animation">
+                    <div class="bar" style="height: 70%;"></div>
+                    <div class="bar" style="height: 90%;"></div>
+                    <div class="bar" style="height: 60%;"></div>
+                    <div class="bar" style="height: 85%;"></div>
+                    <div class="bar" style="height: 75%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Data Analytics Projects</h2>
+            <p class="section-subtitle">Hands-on projects showcasing data cleaning, analysis, visualization, and storytelling</p>
+            
+            <!-- Titanic Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-badge">Featured</div>
+                    <h3 class="project-title">Titanic Survival Analysis</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/spacepriest8/titanic_analysis" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://github.com/spacepriest8/titanic_analysis/blob/main/notebooks/titanic_eda.ipynb" target="_blank" class="project-link">
+                            <i class="fas fa-file-code"></i> Notebook
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Comprehensive EDA of the Titanic dataset to identify factors influencing survival rates. 
+                        Analyzed 891 passenger records to uncover key insights about gender, class, and age disparities.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-chart-line"></i>
+                            <span><strong>38.4%</strong> overall survival rate</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-venus"></i>
+                            <span><strong>74.2%</strong> female survival vs <strong>18.9%</strong> male</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-crown"></i>
+                            <span><strong>63%</strong> 1st class vs <strong>24%</strong> 3rd class</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Seaborn</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">Jupyter</span>
+                        <span class="tech-tag">EDA</span>
+                    </div>
+                    <div class="project-visuals">
+                        <div class="visual-item">
+                            <img src="../outputs/overall_survival.png" alt="Titanic Survival Distribution" >
+                            <p>Overall Survival Distribution</p>
+                        </div>
+                        <div class="visual-item">
+                            <img src="../outputs/correlation_heatmap.png" alt="Correlation Heatmap" >
+                            <p>Feature Correlation Heatmap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Projects Placeholders -->
+            <div class="project-card upcoming">
+                <div class="project-header">
+                    <div class="project-badge">Coming Soon</div>
+                    <h3 class="project-title">COVID-19 Data Analysis Dashboard</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Time-series analysis of global COVID-19 trends with interactive visualizations. 
+                        Tracking cases, deaths, vaccinations, and recovery rates across countries.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Time Series</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">APIs</span>
+                        <span class="tech-tag">Dashboard</span>
+                    </div>
+                    <div class="project-status">
+                        <div class="status-bar">
+                            <div class="status-progress" style="width: 30%;"></div>
+                        </div>
+                        <span class="status-text">30% Complete</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card upcoming">
+                <div class="project-header">
+                    <div class="project-badge">Coming Soon</div>
+                    <h3 class="project-title">Sales Performance Analytics</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Business intelligence project analyzing sales data to identify trends, 
+                        top-performing products, and regional performance metrics.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Business Intelligence</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">KPIs</span>
+                        <span class="tech-tag">Forecasting</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card upcoming">
+                <div class="project-header">
+                    <div class="project-badge">Coming Soon</div>
+                    <h3 class="project-title">Customer Segmentation with Clustering</h3>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">
+                        Unsupervised learning project using K-Means clustering to segment customers 
+                        based on purchasing behavior and demographics for targeted marketing.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">K-Means</span>
+                        <span class="tech-tag">PCA</span>
+                        <span class="tech-tag">Customer Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Tools and technologies I use for data analysis and visualization</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming & Analysis</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%;"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas & NumPy</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">R</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%;"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Visualization</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Matplotlib</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%;"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Seaborn</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 92%;"></div>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Plotly</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tableau</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Tools & Platforms</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Jupyter Notebook</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%;"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Excel</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Streamlit</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About This Portfolio</h2>
+                    <p>
+                        This portfolio showcases practical data analytics projects that demonstrate end-to-end data workflow:
+                        from data collection and cleaning to analysis, visualization, and insight generation.
+                    </p>
+                    <p>
+                        Each project is built with real-world applicability in mind, focusing on solving business problems
+                        and telling compelling data stories. The code is clean, well-documented, and reproducible.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Production-ready code</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Clear documentation</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Business insights focused</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Professional visualizations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>5+ Projects</h3>
+                            <p>Completed & upcoming</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>1000+ Lines</h3>
+                            <p>Clean Python code</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>15+ Charts</h3>
+                            <p>Interactive visualizations</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>50+ Hours</h3>
+                            <p>Hands-on analysis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+<div class="contact-note">
+    <div class="resume-section">
+        <h3><i class="fas fa-file-pdf"></i> Professional Resume</h3>
+        
+        <div class="resume-actions">
+            <a href="OKORONKWO_KINGSLEY_Resume.pdf" class="btn btn-primary" download>
+                <i class="fas fa-download"></i> Download Full Resume (PDF)
+            </a>
+            
+            <a href="OKORONKWO_KINGSLEY_Resume.pdf" class="btn btn-secondary">
+                <i class="fas fa-file"></i> One-Page Version
+            </a>
+            
+            <a href="https://docs.google.com/viewer?url=https://github.com/spacepriest8/OKORONKWO_KINGSLEY_Resume.pdf" 
+               class="btn btn-secondary" target="_blank">
+                <i class="fas fa-eye"></i> Preview Online
+            </a>
+        </div>
+        
+        <div class="resume-info">
+            <div class="info-item">
+                <i class="fas fa-file-alt"></i>
+                <div>
+                    <strong>Format:</strong> PDF
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-weight-hanging"></i>
+                <div>
+                    <strong>Size:</strong> 2 Pages, 250KB
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-calendar-alt"></i>
+                <div>
+                    <strong>Updated:</strong> December 2024
+                </div>
+            </div>
+        </div>
+        
+        <!-- Resume Preview Cards -->
+        <div class="resume-preview-cards">
+            <div class="preview-card">
+                <h4><i class="fas fa-code"></i> Technical Expertise</h4>
+                <ul>
+                    <li>Python Data Analysis (Pandas, NumPy)</li>
+                    <li>SQL & Database Management</li>
+                    <li>Data Visualization (Seaborn, Plotly)</li>
+                    <li>Statistical Analysis & A/B Testing</li>
+                </ul>
+            </div>
+            
+            <div class="preview-card">
+                <h4><i class="fas fa-chart-line"></i> Key Projects</h4>
+                <ul>
+                    <li>Titanic Survival Analysis</li>
+                    <li>Sales Performance Dashboard</li>
+                    <li>Customer Segmentation Model</li>
+                    <li>COVID-19 Data Tracker</li>
+                </ul>
+            </div>
+            
+            <div class="preview-card">
+                <h4><i class="fas fa-certificate"></i> Certifications</h4>
+                <ul>
+                    <li> Data Analytics</li>
+                    <li>DevOps Foundations: Continuous Delivery/Continuous Integration</li>
+                    <li>Microsoft Excel Expert</li>
+                    <li>Learning ITIL</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Interested in data analytics opportunities or collaboration</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/spacepriest8" target="_blank">github.com/spacepriest8</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <div>
+                            <h3>Latest Project</h3>
+                            <a href="https://github.com/spacepriest8/titanic_analysis" target="_blank">Titanic Survival Analysis</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:your.email@example.com">kingsleyokoronkwo189@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-note">
+                    <h3><i class="fas fa-lightbulb"></i> Looking for Data Roles</h3>
+                    <p>
+                        Actively seeking Senior data analyst, business intelligence, or data visualization positions.
+                        Open to internships, junior roles, Data Control Enginner Rolesand freelance projects.
+                    </p>
+                    <div class="resume-button">
+                         <a href="OKORONKWO_KINGSLEY_Resume.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download Resume (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    📊 <span>Data Analytics Portfolio</span>
+                </div>
+                <p class="footer-text">
+                    Built with Python, HTML, CSS, and a passion for data storytelling
+                </p>
+                <div class="footer-links">
+                    <a href="https://github.com/spacepriest8" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2025 Data Analytics Portfolio. Last updated: <span id="current-date"></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
