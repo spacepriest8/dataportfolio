@@ -1,28 +1,30 @@
-// Resume Download Tracking
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Get all resume download links
     const resumeLinks = document.querySelectorAll('a[download]');
-    
+    let hideTimeout;
+
     resumeLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            // Show download confirmation
+        link.addEventListener('click', function () {
             showDownloadMessage();
-            
-            // You can add analytics here
+
             console.log(`Resume downloaded: ${this.href}`);
-            
-            // Optional: Track with Google Analytics
-            // gtag('event', 'resume_download', {
-            //     'event_category': 'engagement',
-            //     'event_label': 'Resume Download'
-            // });
+
+            // Google Analytics event
+            if (typeof gtag === 'function') {
+                gtag('event', 'resume_download', {
+                    event_category: 'engagement',
+                    event_label: 'Resume PDF',
+                    value: 1,
+                    transport_type: 'beacon'
+                });
+            }
         });
     });
-    
+
     // Show download success message
     function showDownloadMessage() {
-        // Create or show message
         let message = document.querySelector('.download-success');
+
         if (!message) {
             message = document.createElement('div');
             message.className = 'download-success';
@@ -32,22 +34,26 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             document.body.appendChild(message);
         }
-        
+
         message.style.display = 'flex';
         message.style.alignItems = 'center';
         message.style.gap = '10px';
-        
-        // Hide after 3 seconds
-        setTimeout(() => {
+
+        clearTimeout(hideTimeout);
+        hideTimeout = setTimeout(() => {
             message.style.display = 'none';
         }, 3000);
     }
-    
+
     // Update current date in footer
     const currentDate = new Date().toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
     });
-    document.getElementById('current-date').textContent = currentDate;
+
+    const dateElement = document.getElementById('current-date');
+    if (dateElement) {
+        dateElement.textContent = currentDate;
+    }
 });
